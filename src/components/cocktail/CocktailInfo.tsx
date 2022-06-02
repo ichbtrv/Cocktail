@@ -44,7 +44,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
         </section>
       </section>
       <section className="  mt-2 flex max-w-fit flex-col gap-3 md:mt-0">
-        <div className="grow-1 flex w-96 items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none">
+        <div className="flex w-96 items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none">
           <h1 className="mr-2 text-4xl  text-white">{name}</h1>
         </div>
         <div className="rounded p-2 shadow">

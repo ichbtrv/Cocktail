@@ -1,5 +1,6 @@
+import { useRouter } from 'next/router';
 import type { FormEvent } from 'react';
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { searchCocktailsByName } from '@/store/cocktails/thunks';
@@ -7,16 +8,25 @@ import { searchCocktailsByName } from '@/store/cocktails/thunks';
 import Icon from '../icons';
 
 const SearchBar = () => {
+  const [, startTransition] = useTransition();
   const [searchText, setSearchText] = useState('');
   const dispatch = useDispatch();
+  const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSearchText(e.target.value);
+    startTransition(() => {
+      setSearchText(e.target.value);
+    });
   };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    dispatch(searchCocktailsByName(searchText));
+    startTransition(() => {
+      dispatch(searchCocktailsByName(searchText));
+    });
+    if (router.query.id !== undefined) {
+      router.push('/');
+    }
   };
 
   return (

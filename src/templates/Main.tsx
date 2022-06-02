@@ -11,7 +11,7 @@ type IMainProps = {
 const Main = (props: IMainProps) => (
   <div className="text-gray-700 antialiased">
     {props.meta}
-    <div className="mx-auto">
+    <div className="mx-auto p-4">
       <Landing />
 
       <SearchBarContainer />

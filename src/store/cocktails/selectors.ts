@@ -10,8 +10,8 @@ export const {
 } = cocktailsAdapter.getSelectors<RootState>((state) => state.cocktails);
 
 export const selectCocktails = (state: RootState) => state.cocktails;
-// @ts-ignore
-export const selectCocktailsState = createSelector(
+
+export const selectCocktailsState: RootState = createSelector(
   selectCocktails,
   selectAllCocktails,
   (state, cocktails) => ({

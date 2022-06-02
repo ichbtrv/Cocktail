@@ -1,17 +1,6 @@
 @import './tailwind.css';
 @import './fonts.css';
 
-
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
-
-
-
 * {
   margin: 0;
   padding: 0;
@@ -36,3 +25,15 @@ input {
   font-family: inherit;
 }
 
+
+.appear {
+  opacity: 0;
+  animation: appear 0.5s cubic-bezier(0.1, 0, 0.175, 1) forwards;
+}
+
+
+@keyframes appear {
+  to {
+    opacity: 1;
+  }
+}

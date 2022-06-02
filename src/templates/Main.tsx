@@ -1,15 +1,20 @@
 import type { ReactNode } from 'react';
 
+import Landing from '@/components/Landing';
+import SearchBarContainer from '@/components/searchbar/SearchBarContainer';
+
 type IMainProps = {
   meta?: ReactNode;
   children: ReactNode;
 };
 
 const Main = (props: IMainProps) => (
-  <div className="max-w-2xl  text-gray-700 antialiased">
+  <div className="text-gray-700 antialiased">
     {props.meta}
-    {/* <Header /> */}
     <div className="mx-auto">
+      <Landing />
+
+      <SearchBarContainer />
       <div className="py-5 text-xl">{props.children}</div>
     </div>
   </div>

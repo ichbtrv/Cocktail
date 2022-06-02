@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 
 interface CocktailCardProps {
-  key?: string;
+  keyName?: string;
   id?: string;
   name?: string;
   image?: string;
@@ -10,7 +10,7 @@ interface CocktailCardProps {
 }
 const CocktailCard: React.FC<CocktailCardProps> = ({
   id,
-  key,
+  keyName,
   name,
   image,
   info,
@@ -23,7 +23,7 @@ const CocktailCard: React.FC<CocktailCardProps> = ({
       key={id}
       onClick={() => router.push(`cocktail/${id}`)}
     >
-      <div className="relative shadow" key={key}>
+      <div className="relative shadow" key={keyName}>
         <div className="absolute top-1 right-1 z-40 rounded bg-white  bg-opacity-50 px-2 py-1 text-xs text-rose-500">
           {info}
         </div>
@@ -41,13 +41,22 @@ const CocktailCard: React.FC<CocktailCardProps> = ({
           <img
             src={image}
             alt={name}
+            loading="lazy"
             className="card-img-top h-72 rounded object-fill opacity-50 mix-blend-hard-light blur-sm backdrop-blur-lg"
           />
           <img
             src={image}
             alt={name}
-            className="card-img-top absolute top-0 h-72 rounded object-fill opacity-60 mix-blend-multiply "
+            loading="lazy"
+            className="card-img-top absolute top-0 h-72 rounded object-fill opacity-60 mix-blend-multiply"
           />
+          {/* <Image
+            src={image}
+            alt={name}
+            loading="lazy"
+            layout="fill"
+            className="card-img-top absolute top-0 h-72 rounded object-fill opacity-60 mix-blend-multiply"
+          /> */}
         </div>
       </div>
     </div>

@@ -7,6 +7,9 @@ module.exports = withBundleAnalyzer({
   eslint: {
     dirs: ['.'],
   },
+  images: {
+    domains: ['www.thecocktaildb.com'],
+  },
   poweredByHeader: false,
   trailingSlash: true,
   basePath: '',

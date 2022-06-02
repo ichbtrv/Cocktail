@@ -16,7 +16,7 @@ const Logo: React.FC<LogoVariant> = ({
   return (
     <section
       onClick={clickHandler}
-      className={`${className} mt-1 mr-2 cursor-pointer rounded-xl p-2 mix-blend-screen hover:bg-gray-400 hover:bg-opacity-20`}
+      className={`${className} mt-1 mr-2 cursor-pointer rounded-xl min-w-[24px] p-2 mix-blend-screen hover:bg-gray-400 hover:bg-opacity-20`}
     >
       <img src={`/logos/${variant}`} alt="cocktail" className={`${width}`} />
     </section>

@@ -10,6 +10,8 @@ export const cocktailApi = createApi({
   endpoints: (build) => ({
     getCocktailById: build.query<Cocktail, string>({
       query: (id) => `lookup.php?i=${id}`,
+      // @ts-ignore
+
       transformResponse: (response: { drinks: Cocktail[] }) => {
         return response.drinks[0];
       },

@@ -8,6 +8,8 @@ export type CocktailShort = {
   strDrink: string;
   strDrinkThumb: string;
   idDrink: string;
+  strAlcoholic: string;
+  strGlass: string;
 };
 
 export type Cocktail = {

@@ -10,7 +10,7 @@
       "error",
       {
         "singleQuote": true,
-        "endOfLine": "auto"
+        "endOfLine": "auto",
       }
     ]
   },
@@ -39,8 +39,13 @@
           {
             "singleQuote": true,
             "endOfLine": "auto"
+     
           }
         ],
+        "no-unused-imports": "off",
+        "consistent-return": "off",
+        "no-param-reassign" : "off" ,
+        "no-plusplus": "off",
         "react/destructuring-assignment": "off", // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         "jsx-a11y/anchor-is-valid": "off", // Next.js use his own internal link system
         "react/require-default-props": "off", // Allow non-defined react props as undefined

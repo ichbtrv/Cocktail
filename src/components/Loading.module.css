@@ -1,0 +1,33 @@
+.loading {
+  @apply transition-all relative;
+}
+
+.loading--active .loading-content {
+  opacity: 0.4;
+}
+.loading-content {
+  @apply transition-opacity duration-300;
+}
+
+.loading-spinner {
+  @apply text-gray-800 animate-spin;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+    div#loading-container {
+        --reveal-delay: 200ms;
+    }
+
+    svg#loading-svg {
+        fill: hsl(var(--fetch-hue) 62% 50%);
+        width: 32px;
+    }
+

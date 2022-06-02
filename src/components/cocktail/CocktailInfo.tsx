@@ -22,7 +22,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
       key={id}
     >
       <section className="h-96 max-w-fit shadow ">
-        <div className="relative rounded bg-gray-300 contrast-75  hover:brightness-110">
+        <div className="relative max-w-fit rounded bg-gray-300 contrast-75  hover:brightness-110">
           <img
             src={image}
             alt={name}
@@ -44,7 +44,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
         </section>
       </section>
       <section className="mt-2 flex max-w-fit flex-col gap-3 md:mt-0">
-        <div className="flex w-96 items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none">
+        <div className="flex items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none md:w-96">
           <h1 className="mr-2 text-4xl  text-white">{name}</h1>
         </div>
         <div className="rounded p-2 shadow">
@@ -56,7 +56,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
               </p>
             ))}
         </div>
-        <div className="mt-2 w-96 rounded p-2 shadow">
+        <div className="mt-2 max-w-fit  rounded p-2 shadow md:w-96">
           <h1 className="text-xl">Instructions</h1>
           <article className="text-base text-gray-600">{instructions}</article>
         </div>

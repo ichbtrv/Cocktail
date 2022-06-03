@@ -19,7 +19,7 @@ const CocktailCard: React.FC<CocktailCardProps> = ({
   const router = useRouter();
   return (
     <div
-      className="flex flex-col justify-center p-4"
+      className="appear flex flex-col justify-center p-4"
       key={id}
       onClick={() => router.push(`cocktail/${id}`)}
     >

@@ -33,8 +33,8 @@ const CocktailCard: React.FC<CocktailCardProps> = ({
         </div>
 
         <div className="absolute right-0 bottom-0 z-30   rounded  p-2  text-gray-700">
-          <div className="z-30  flex items-center justify-end rounded bg-[#ff2571] bg-opacity-60 p-1 leading-none">
-            <h1 className="z-30  text-4xl text-white">{name}</h1>
+          <div className="z-30 flex items-center justify-end rounded bg-[#ff2571] bg-opacity-60 p-1 leading-none">
+            <h1 className="text-4xl text-white">{name}</h1>
           </div>
         </div>
 

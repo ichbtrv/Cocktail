@@ -14,7 +14,7 @@ const Landing = () => {
 
   return (
     <section className="appear relative my-2 mx-4 overflow-hidden rounded-xl shadow md:h-[50vh] ">
-      <div className="absolute  top-0 left-1 z-10 ml-2 p-4 text-[#ff5d96] sm:top-1 sm:p-0 md:backdrop-blur-xl">
+      <div className="absolute  top-0 left-1 z-10 ml-2 p-4 text-[#ff5d96] sm:top-1 sm:p-0 ">
         <h1 className=" text-4xl leading-none sm:text-6xl">
           Find a Cocktail
           <br /> Recipe.

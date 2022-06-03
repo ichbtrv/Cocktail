@@ -42,7 +42,9 @@ const CocktailList = () => {
     return <p>Oops, something went wrong..</p>;
   }
 
-  return <div className="flex flex-wrap justify-center">{cocktailState}</div>;
+  return (
+    <div className="appear flex flex-wrap justify-center">{cocktailState}</div>
+  );
 };
 
 export default CocktailList;

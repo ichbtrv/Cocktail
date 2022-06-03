@@ -21,17 +21,17 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
       className="appear flex max-w-4xl flex-col justify-center gap-4  p-4  md:grid md:grid-cols-2"
       key={id}
     >
-      <section className="h-96 max-w-fit shadow ">
+      <section className="max-w-fit shadow sm:h-96 ">
         <div className="relative max-w-fit rounded bg-gray-300 contrast-75  hover:brightness-110">
           <img
             src={image}
             alt={name}
-            className="top h-96 rounded object-fill opacity-50 mix-blend-hard-light blur-sm backdrop-blur-lg"
+            className="top rounded object-fill opacity-50 mix-blend-hard-light blur-sm backdrop-blur-lg sm:h-96"
           />
           <img
             src={image}
             alt={name}
-            className="absolute top-0 h-96 rounded object-fill opacity-60 mix-blend-multiply "
+            className="absolute top-0 rounded object-fill opacity-60 mix-blend-multiply sm:h-96 "
           />
         </div>
         <section className="flex h-6 justify-between">

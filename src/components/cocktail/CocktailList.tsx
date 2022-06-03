@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 
 import { useAppSelector } from '@/hooks/redux';
+import type { Cocktail } from '@/store/cocktails/types';
 
 import { selectCocktailsState } from '../../store/cocktails/selectors';
 import Loading from '../Loading';
@@ -15,7 +16,7 @@ const CocktailList = () => {
   useMemo(
     () =>
       setCocktailState(
-        cocktails.map((v) => (
+        cocktails.map((v: Cocktail) => (
           <CocktailCard
             key={v.idDrink}
             id={v.idDrink}

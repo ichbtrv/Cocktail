@@ -11,6 +11,8 @@ import { useGetCocktailByIdQuery } from '../../store/cocktails/api';
 const SingleCocktail = () => {
   const router = useRouter();
   const { id } = router.query;
+  // @ts-ignore
+
   const { data, error } = useGetCocktailByIdQuery(id);
   let ingredients;
 

@@ -13,9 +13,9 @@ const Landing = () => {
   if (cocktails.length !== 0 || router.query.id !== undefined) return <></>;
 
   return (
-    <section className="appear relative my-2 mx-4 overflow-hidden rounded-xl shadow sm:h-[50vh] md:min-h-[450px] md:w-[96.75vw]">
-      <div className="absolute top-1 left-1 z-10 ml-2 text-[#ff5d96] backdrop-blur-xl">
-        <h1 className="text-6xl leading-none">
+    <section className="appear relative my-2 mx-4 overflow-hidden rounded-xl shadow md:h-[50vh] ">
+      <div className="absolute  top-0 left-1 z-10 ml-2 p-4 text-[#ff5d96] sm:top-1 sm:p-0 ">
+        <h1 className=" text-4xl leading-none sm:text-6xl">
           Find a Cocktail
           <br /> Recipe.
         </h1>
@@ -40,7 +40,7 @@ const Landing = () => {
         src="/cocktail.jpg"
         alt="party"
         loading="lazy"
-        className="w-[97vw] rounded-xl object-cover blur-[2.5px] brightness-75 contrast-75 saturate-0"
+        className="w-[97vw] rounded-xl object-cover brightness-75 contrast-75 saturate-0 sm:blur-[2.5px]"
       />
     </section>
   );

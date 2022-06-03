@@ -11,7 +11,7 @@ export const {
 
 export const selectCocktails = (state: RootState) => state.cocktails;
 
-export const selectCocktailsState = createSelector(
+export const selectCocktailsState: RootState = createSelector(
   selectCocktails,
   selectAllCocktails,
   (state, cocktails) => ({

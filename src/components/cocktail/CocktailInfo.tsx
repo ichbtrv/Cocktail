@@ -18,20 +18,20 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
 }) => {
   return (
     <div
-      className="appear flex max-w-4xl flex-col justify-center gap-4  p-4  md:grid md:grid-cols-2"
+      className="appear flex max-w-4xl flex-col justify-center gap-4 p-4 md:grid md:grid-cols-2"
       key={id}
     >
-      <section className="h-96 max-w-fit shadow ">
-        <div className="rounded bg-gray-300  contrast-75  hover:brightness-110">
+      <section className="max-w-fit rounded shadow sm:h-96">
+        <div className="relative  rounded bg-gray-300 contrast-75 hover:brightness-110">
           <img
             src={image}
             alt={name}
-            className="card-img-top h-96 rounded object-fill opacity-50 mix-blend-hard-light blur-sm backdrop-blur-lg"
+            className="top rounded object-fill opacity-50 mix-blend-hard-light blur-sm backdrop-blur-lg sm:h-96 sm:w-96"
           />
           <img
             src={image}
             alt={name}
-            className="card-img-top absolute top-0 h-96 rounded object-fill opacity-60 mix-blend-multiply "
+            className="absolute top-0 rounded object-fill opacity-60 mix-blend-multiply sm:h-96 sm:w-96 "
           />
         </div>
         <section className="flex h-6 justify-between">
@@ -43,8 +43,8 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
           </div>
         </section>
       </section>
-      <section className="  mt-2 flex max-w-fit flex-col gap-3 md:mt-0">
-        <div className="grow-1 flex w-96 items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none">
+      <section className="mt-2 flex flex-col gap-3 sm:max-w-fit md:mt-0">
+        <div className="flex items-center justify-end rounded bg-[#ff2571] bg-opacity-90 p-1 px-1 py-2 leading-none sm:w-96">
           <h1 className="mr-2 text-4xl  text-white">{name}</h1>
         </div>
         <div className="rounded p-2 shadow">
@@ -56,7 +56,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
               </p>
             ))}
         </div>
-        <div className="mt-2 w-96 rounded p-2 shadow">
+        <div className="mt-2 rounded p-2 shadow sm:w-96">
           <h1 className="text-xl">Instructions</h1>
           <article className="text-base text-gray-600">{instructions}</article>
         </div>

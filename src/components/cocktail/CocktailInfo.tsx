@@ -56,7 +56,7 @@ const CocktailInfo: React.FC<CocktailCardProps> = ({
               </p>
             ))}
         </div>
-        <div className="mt-2 max-w-fit rounded p-2 shadow sm:w-96 sm:max-w-none">
+        <div className="mt-2 rounded p-2 shadow sm:w-96 sm:max-w-fit">
           <h1 className="text-xl">Instructions</h1>
           <article className="text-base text-gray-600">{instructions}</article>
         </div>
